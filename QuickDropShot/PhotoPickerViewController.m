@@ -373,7 +373,7 @@ didFinishSavingWithError:(NSError*)error contextInfo:(void*)context {
             jpgFloat = 0.5f;
             break;
         case 3:
-            jpgFloat = 0.85f;
+            jpgFloat = 0.8f;
             break;
         case 4:
             jpgFloat = 1.0f;
@@ -416,7 +416,6 @@ didFinishSavingWithError:(NSError*)error contextInfo:(void*)context {
     
     UIGraphicsBeginImageContext(CGSizeMake(r_w, r_h));
     [image drawInRect:CGRectMake(0, 0, r_w, r_h)];
-    UIImage *sImage;
     sImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     }
