@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA10977714F008D0009B807F /* ImageSizeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA10977614F008D0009B807F /* ImageSizeTableViewController.m */; };
+		CA2A1CCD14E8BEC900E67055 /* stBT_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2A1CCB14E8BEC900E67055 /* stBT_active@2x.png */; };
+		CA2A1CCE14E8BEC900E67055 /* stBT_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2A1CCC14E8BEC900E67055 /* stBT_normal@2x.png */; };
+		CA8FF15114EE095C00AB45F8 /* QdUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8FF15014EE095C00AB45F8 /* QdUserDefault.m */; };
+		CA9A345414E156DA005AC61E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9A345314E156DA005AC61E /* UIKit.framework */; };
+		CA9A345614E156DA005AC61E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9A345514E156DA005AC61E /* Foundation.framework */; };
+		CA9A345814E156DA005AC61E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9A345714E156DA005AC61E /* CoreGraphics.framework */; };
+		CA9A345E14E156DA005AC61E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA9A345C14E156DA005AC61E /* InfoPlist.strings */; };
+		CA9A346014E156DA005AC61E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9A345F14E156DA005AC61E /* main.m */; };
+		CA9A346414E156DA005AC61E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9A346314E156DA005AC61E /* AppDelegate.m */; };
+		CA9A346B14E15772005AC61E /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9A346A14E15772005AC61E /* DropboxSDK.framework */; };
+		CA9A346D14E1578B005AC61E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9A346C14E1578B005AC61E /* Security.framework */; };
+		CA9B85F514E21200004F80EB /* PhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B85F414E21200004F80EB /* PhotoPickerViewController.m */; };
+		CAA2615A14EA5C6700439EA5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA2615914EA5C6700439EA5 /* Default.png */; };
+		CAA2615C14EA5C6D00439EA5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA2615B14EA5C6D00439EA5 /* Default@2x.png */; };
+		CAAF5BDA14E7F6CF00C15D4B /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAF5BD914E7F6CF00C15D4B /* SettingViewController.m */; };
+		CAAF6E8214EA0196005D0DEA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CAAF6E8114EA0196005D0DEA /* icon.png */; };
+		CAAF6E8514EA0199005D0DEA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAAF6E8414EA0199005D0DEA /* icon@2x.png */; };
+		CAD5EC5C14E494DD00D6285C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD5EC5B14E494DD00D6285C /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA10977514F008CF009B807F /* ImageSizeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSizeTableViewController.h; sourceTree = "<group>"; };
+		CA10977614F008D0009B807F /* ImageSizeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSizeTableViewController.m; sourceTree = "<group>"; };
+		CA1C583114EE1AA7006058CA /* QdUserDefault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QdUserDefault.h; sourceTree = "<group>"; };
+		CA2A1CCB14E8BEC900E67055 /* stBT_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stBT_active@2x.png"; sourceTree = "<group>"; };
+		CA2A1CCC14E8BEC900E67055 /* stBT_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stBT_normal@2x.png"; sourceTree = "<group>"; };
+		CA8FF15014EE095C00AB45F8 /* QdUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QdUserDefault.m; sourceTree = "<group>"; };
+		CA9A344F14E156D9005AC61E /* QuickDropShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDropShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9A345314E156DA005AC61E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA9A345514E156DA005AC61E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA9A345714E156DA005AC61E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA9A345B14E156DA005AC61E /* QuickDropShot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickDropShot-Info.plist"; sourceTree = "<group>"; };
+		CA9A345D14E156DA005AC61E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA9A345F14E156DA005AC61E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA9A346114E156DA005AC61E /* QuickDropShot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickDropShot-Prefix.pch"; sourceTree = "<group>"; };
+		CA9A346214E156DA005AC61E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA9A346314E156DA005AC61E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA9A346A14E15772005AC61E /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		CA9A346C14E1578B005AC61E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CA9B85F314E21200004F80EB /* PhotoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPickerViewController.h; sourceTree = "<group>"; };
+		CA9B85F414E21200004F80EB /* PhotoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPickerViewController.m; sourceTree = "<group>"; };
+		CAA2615914EA5C6700439EA5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		CAA2615B14EA5C6D00439EA5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		CAAF5BD814E7F6CF00C15D4B /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		CAAF5BD914E7F6CF00C15D4B /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		CAAF6E8114EA0196005D0DEA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		CAAF6E8414EA0199005D0DEA /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		CAD5EC5B14E494DD00D6285C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA9A344C14E156D9005AC61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD5EC5C14E494DD00D6285C /* QuartzCore.framework in Frameworks */,
+				CA9A346D14E1578B005AC61E /* Security.framework in Frameworks */,
+				CA9A345414E156DA005AC61E /* UIKit.framework in Frameworks */,
+				CA9A345614E156DA005AC61E /* Foundation.framework in Frameworks */,
+				CA9A345814E156DA005AC61E /* CoreGraphics.framework in Frameworks */,
+				CA9A346B14E15772005AC61E /* DropboxSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA9A344414E156D9005AC61E = {
+			isa = PBXGroup;
+			children = (
+				CA9A345914E156DA005AC61E /* QuickDropShot */,
+				CABA140E14E8BE1600F95C0C /* Resource */,
+				CA9A345214E156D9005AC61E /* Frameworks */,
+				CA9A345014E156D9005AC61E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA9A345014E156D9005AC61E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA9A344F14E156D9005AC61E /* QuickDropShot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA9A345214E156D9005AC61E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAD5EC5B14E494DD00D6285C /* QuartzCore.framework */,
+				CA9A346C14E1578B005AC61E /* Security.framework */,
+				CA9A346A14E15772005AC61E /* DropboxSDK.framework */,
+				CA9A345314E156DA005AC61E /* UIKit.framework */,
+				CA9A345514E156DA005AC61E /* Foundation.framework */,
+				CA9A345714E156DA005AC61E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA9A345914E156DA005AC61E /* QuickDropShot */ = {
+			isa = PBXGroup;
+			children = (
+				CA9A346214E156DA005AC61E /* AppDelegate.h */,
+				CA9A346314E156DA005AC61E /* AppDelegate.m */,
+				CA1C583114EE1AA7006058CA /* QdUserDefault.h */,
+				CA8FF15014EE095C00AB45F8 /* QdUserDefault.m */,
+				CA9B85F314E21200004F80EB /* PhotoPickerViewController.h */,
+				CA9B85F414E21200004F80EB /* PhotoPickerViewController.m */,
+				CAAF5BD814E7F6CF00C15D4B /* SettingViewController.h */,
+				CAAF5BD914E7F6CF00C15D4B /* SettingViewController.m */,
+				CA10977514F008CF009B807F /* ImageSizeTableViewController.h */,
+				CA10977614F008D0009B807F /* ImageSizeTableViewController.m */,
+				CA9A345A14E156DA005AC61E /* Supporting Files */,
+			);
+			path = QuickDropShot;
+			sourceTree = "<group>";
+		};
+		CA9A345A14E156DA005AC61E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA9A345B14E156DA005AC61E /* QuickDropShot-Info.plist */,
+				CA9A345C14E156DA005AC61E /* InfoPlist.strings */,
+				CA9A345F14E156DA005AC61E /* main.m */,
+				CA9A346114E156DA005AC61E /* QuickDropShot-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CABA140E14E8BE1600F95C0C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2615B14EA5C6D00439EA5 /* Default@2x.png */,
+				CAA2615914EA5C6700439EA5 /* Default.png */,
+				CAAF6E8414EA0199005D0DEA /* icon@2x.png */,
+				CAAF6E8114EA0196005D0DEA /* icon.png */,
+				CA2A1CCB14E8BEC900E67055 /* stBT_active@2x.png */,
+				CA2A1CCC14E8BEC900E67055 /* stBT_normal@2x.png */,
+			);
+			name = Resource;
+			path = QuickDropShot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA9A344E14E156D9005AC61E /* QuickDropShot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9A346714E156DA005AC61E /* Build configuration list for PBXNativeTarget "QuickDropShot" */;
+			buildPhases = (
+				CA9A344B14E156D9005AC61E /* Sources */,
+				CA9A344C14E156D9005AC61E /* Frameworks */,
+				CA9A344D14E156D9005AC61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickDropShot;
+			productName = QuickDropShot;
+			productReference = CA9A344F14E156D9005AC61E /* QuickDropShot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA9A344614E156D9005AC61E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = CA9A344914E156D9005AC61E /* Build configuration list for PBXProject "QuickDropShot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+			);
+			mainGroup = CA9A344414E156D9005AC61E;
+			productRefGroup = CA9A345014E156D9005AC61E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA9A344E14E156D9005AC61E /* QuickDropShot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA9A344D14E156D9005AC61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9A345E14E156DA005AC61E /* InfoPlist.strings in Resources */,
+				CA2A1CCD14E8BEC900E67055 /* stBT_active@2x.png in Resources */,
+				CA2A1CCE14E8BEC900E67055 /* stBT_normal@2x.png in Resources */,
+				CAAF6E8214EA0196005D0DEA /* icon.png in Resources */,
+				CAAF6E8514EA0199005D0DEA /* icon@2x.png in Resources */,
+				CAA2615A14EA5C6700439EA5 /* Default.png in Resources */,
+				CAA2615C14EA5C6D00439EA5 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA9A344B14E156D9005AC61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9A346014E156DA005AC61E /* main.m in Sources */,
+				CA9A346414E156DA005AC61E /* AppDelegate.m in Sources */,
+				CA9B85F514E21200004F80EB /* PhotoPickerViewController.m in Sources */,
+				CAAF5BDA14E7F6CF00C15D4B /* SettingViewController.m in Sources */,
+				CA8FF15114EE095C00AB45F8 /* QdUserDefault.m in Sources */,
+				CA10977714F008D0009B807F /* ImageSizeTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA9A345C14E156DA005AC61E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA9A345D14E156DA005AC61E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA9A346514E156DA005AC61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: masashi mizuno (632B6LYA2Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "7C5A5111-CB52-474A-A76D-7540359BF723";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA9A346614E156DA005AC61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: masashi mizuno";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: masashi mizuno";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "1519145A-DD43-4CCF-8222-B896A0723BA3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1519145A-DD43-4CCF-8222-B896A0723BA3";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA9A346814E156DA005AC61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: masashi mizuno (632B6LYA2Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: masashi mizuno (632B6LYA2Z)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickDropShot/QuickDropShot-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "QuickDropShot/QuickDropShot-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AB34206A-8B73-4E10-8E34-8A12F8C4FA39";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AB34206A-8B73-4E10-8E34-8A12F8C4FA39";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA9A346914E156DA005AC61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: masashi mizuno";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: masashi mizuno";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickDropShot/QuickDropShot-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "QuickDropShot/QuickDropShot-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1519145A-DD43-4CCF-8222-B896A0723BA3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1519145A-DD43-4CCF-8222-B896A0723BA3";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA9A344914E156D9005AC61E /* Build configuration list for PBXProject "QuickDropShot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9A346514E156DA005AC61E /* Debug */,
+				CA9A346614E156DA005AC61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA9A346714E156DA005AC61E /* Build configuration list for PBXNativeTarget "QuickDropShot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9A346814E156DA005AC61E /* Debug */,
+				CA9A346914E156DA005AC61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA9A344614E156D9005AC61E /* Project object */;
+}
