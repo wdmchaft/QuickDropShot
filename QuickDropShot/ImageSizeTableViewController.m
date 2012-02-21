@@ -61,7 +61,7 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-    NSString *footString = @"高画質撮影時はWiFi接続をお勧めします";
+    NSString *footString = @"";
     return footString;
 }
 

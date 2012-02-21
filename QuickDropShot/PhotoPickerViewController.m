@@ -85,10 +85,6 @@
     self.picker.cameraOverlayView = self.view;
     self.picker.allowsEditing = NO;
     
-    //デバイスの回転感知
-    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-    //通知センターを利用して位置を取得する
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRotate:) name:UIDeviceOrientationDidChangeNotification object:nil]; 
 }
 
 //-------------------------------------------------------
@@ -96,7 +92,7 @@
 //-------------------------------------------------------
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    NSLog(@"viewWillAppear");
+    
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSLog(@"cameraRoll%@", [userDefault objectForKey:@"cameraRoll"]);
     if (![userDefault boolForKey:@"iconBadge"]) {
@@ -111,7 +107,11 @@
 //-------------------------------------------------------
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    NSLog(@"viewDidAppear");
+    
+    //デバイスの回転感知
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    //通知センターを利用して位置を取得する
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRotate:) name:UIDeviceOrientationDidChangeNotification object:nil];
     
     //カメラ起動フラグがYESであれば
     if (isCamera) {
@@ -127,7 +127,6 @@
             [alert show];
         }
     }
-    
 }
 
 //-------------------------------------------------------
@@ -135,7 +134,6 @@
 //-------------------------------------------------------
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    NSLog(@"viewWillDisappear");    
 }
 
 //-------------------------------------------------------
@@ -143,7 +141,6 @@
 //-------------------------------------------------------
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-    NSLog(@"viewDidDisappear");    
 }
 
 //-------------------------------------------------------
@@ -163,7 +160,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return YES;
+    return NO;
 }
 
 - (void)didRotate:(NSNotification *)notification {
@@ -222,7 +219,7 @@
 //シャッターが押され[use]を押された時
 //-------------------------------------------------------
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
-    
+        
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     
     //保存待ちcountを++
@@ -366,16 +363,16 @@ didFinishSavingWithError:(NSError*)error contextInfo:(void*)context {
     NSInteger jpgQ = [userDefault integerForKey:@"imageQuality"];
     CGFloat jpgFloat;
     switch (jpgQ) {
-        case 1:
+        case 0:
             jpgFloat = 0.3f;
             break;
-        case 2:
+        case 1:
             jpgFloat = 0.5f;
             break;
-        case 3:
+        case 2:
             jpgFloat = 0.8f;
             break;
-        case 4:
+        case 3:
             jpgFloat = 1.0f;
             break;
     }
@@ -443,6 +440,10 @@ didFinishSavingWithError:(NSError*)error contextInfo:(void*)context {
 - (void)openSettingView:(id)sender {
     //カメラ起動フラグをOFFに
     isCamera = NO; 
+    
+    [self.stButton removeFromSuperview];
+    [self.upStatus removeFromSuperview];
+    [self.indicator removeFromSuperview];
     
     //設定画面のインスタンスを生成して、モーダルで表示
     SettingViewController *stView = [[SettingViewController alloc] initWithNibName:nil bundle:nil];
